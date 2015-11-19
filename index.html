@@ -14,7 +14,30 @@
             <input type="color" name="line-color-inp" id="line-color-inp" value="#000000">
         </p>
 
-        <canvas width="600" height="400"></canvas>
+        <p>
+            <label for="line-width-inp">Line Width:</label>
+            <input type="number" name = "line-width-inp" id = 'line-width-inp' value = 1/>
+        </p>
+        
+        <p>
+            <label for="line-join-inp">Line Join:</label>
+            <select name="line-join-inp" id="line-join-inp">
+                <option value="bevel" selected = "selected">Bevel</option>
+                <option value="round">Round</option>
+                <option value="miter">Miter</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="line-end-inp">Line End-Cap:</label>
+            <select name="line-end-inp" id="line-end-inp">
+                <option value="butt" selected = "selected">Butt</option>
+                <option value="round">Round</option>
+                <option value="square">Square</option>
+            </select>
+        </p>
+
+        <canvas id = "drawing-canvas" width="600" height="400"></canvas>
         <script src="js/app.js"></script>
     </body>
 </html>
